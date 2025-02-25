@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General body styling */
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif; /* Set Roboto as the primary font */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Main container: Align form and task list side by side */
+.app-container {
+  display: flex;
+  justify-content: center;
+  /* Centers horizontally */
+  align-items: center;
+  /* Centers vertically */
+  min-height: 100vh;
+  /* Makes sure the container takes the full height of the viewport */
+  padding: 0;
+}
+
+.task-form-list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px;
+  width: 90%;
+  max-width: 1500px;
+  margin: auto;
+  background-color: white;
+  height: 80vh;
+  position: relative;
+}
+
+/* Add the vertical line in the middle */
+.task-form-list-container::before {
+  content: "";
+  position: absolute;
+  top: 7.5%;
+  left: 50%;
+  width: 2px;
+  height: 85%;
+  background-color: #ccc;
+}
+
+/* Styling for the form container */
+.task-form-container {
+  width: 40%;
+}
+
+/* Task list container */
+.task-list-container {
+  width: 40%;
+}
+
+/* Form styling */
+.task-form-container form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  /* Increased border radius for smooth edges */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Added shadow for a modern look */
+}
+
+/* Input fields styling */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Updated button styling for the "Add" button */
+button {
+  background-color: #1e3a8a;
+  /* Changed to blue for better contrast */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #162d66;
+  /* Darker blue on hover */
+}
+
+/* Updated task card styling */
+.task-card {
+  background: #d1d1d1;
+  /* Changed to match grayish UI */
+  padding: 15px;
+  border-radius: 10px;
+  /* Increased border-radius for rounded corners */
+  display: flex;
+  /* Added flex to align button and text */
+  justify-content: space-between;
+  /* Title/description on left, button on right */
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Added shadow effect */
+}
+
+/* Task title styling */
+.task-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Task description styling */
+.task-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+/* Updated "Done" button styling inside task cards */
+.task-card button {
+  background-color: white;
+  /* Changed to white for better contrast */
+  color: black;
+  border: 1px solid black;
+  padding: 5px 10px;
+  /* Reduced padding to make button smaller */
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.task-card button:hover {
+  background-color: #e0e0e0;
+  /* Light gray hover effect */
+}
+
+/* Ensure tasks are displayed properly */
+.task-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* Added spacing between task cards */
+}
+
+/* Form title styling */
+.task-form-container h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}

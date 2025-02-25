@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+.task-item {
+    background-color: #d6d5d4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* Set Roboto as the primary font */
+}
+
+.task-item h3 {
+    margin: 10px;
+}
+
+.task-item p {
+    margin: 5px 10px 10px;
+    font-size: 15px;
+}
+
+.task-item button {
+    background-color: #d6d5d4;
+    color: black;
+    padding: 5px 20px;
+    border-color: black;
+    border-radius: 4px;
+    border-width: 1.5px;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    /* Set Roboto as the primary font */
+    margin: 10px;
+}
+
+.task-item button:hover {
+    background-color: #c4c3c2;
+}
