@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import TaskForm from "./components/TaskForm";
-import TaskList from "./components/TaskList";
+import TaskForm from "./components/TaskForm/index";
+import TaskList from "./components/TaskList/index";
 import { completeTask, createTask, getTasks } from "./api";
 import "./App.css"; // Import the CSS file
 
