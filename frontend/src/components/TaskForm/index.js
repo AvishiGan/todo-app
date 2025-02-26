@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import "./TaskForm.css"; // Import the CSS file
+import "./index.css";
 
 const TaskForm = ({ onTaskCreated }) => {
   const [title, setTitle] = useState("");

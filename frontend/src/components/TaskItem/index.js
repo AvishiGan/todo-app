@@ -1,5 +1,5 @@
 import React from "react";
-import "./TaskItem.css";
+import "./index.css";
 
 const TaskItem = ({ task, onTaskCompleted }) => {
   return (
