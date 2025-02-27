@@ -1,5 +1,5 @@
 import React from "react";
-import TaskItem from "./TaskItem";
+import TaskItem from "../TaskItem/index";
 
 const TaskList = ({ tasks, onTaskCompleted }) => {
   return (

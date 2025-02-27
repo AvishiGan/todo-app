@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import "./TaskForm.css"; // Import the CSS file
+import "./index.css";
 
 const TaskForm = ({ onTaskCreated }) => {
   const [title, setTitle] = useState("");
@@ -11,7 +11,7 @@ const TaskForm = ({ onTaskCreated }) => {
     e.preventDefault();
     if (title.trim() === "") return;
 
-    setIsLoading(true); // Start loading
+    setIsLoading(true);
     try {
       await onTaskCreated({ title, description });
       setTitle("");
@@ -19,7 +19,7 @@ const TaskForm = ({ onTaskCreated }) => {
     } catch (error) {
       console.error("Error creating task:", error);
     } finally {
-      setIsLoading(false); // Stop loading
+      setIsLoading(false);
     }
   };
 
