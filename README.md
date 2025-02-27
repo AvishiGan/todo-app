@@ -21,3 +21,15 @@
 ### Docker Setup
 1. Ensure Docker is installed.
 2. Build and run all services: `docker-compose up --build`
+
+## Running Tests
+
+### Frontend Unit Tests
+- To run the backend unit and integration tests, use the following command: `npm test`
+
+### Backend Unit and Integration Tests
+- To run the backend unit and integration tests, use the following command: `./mvnw test`
+
+### Generate Test Coverage Report (Backend)
+- To generate a test coverage report using Jacoco, run: `./mvnw test jacoco:report`
+- The report will be available in the target/site/jacoco/ directory.
