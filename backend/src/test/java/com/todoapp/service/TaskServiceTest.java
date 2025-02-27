@@ -66,7 +66,7 @@ class TaskServiceTest {
         task2.setId(2L);
         task2.setTitle("Task 2");
 
-        when(taskRepository.findTop5ByCompletedFalseOrderByCreatedAtDesc()).thenReturn(Arrays.asList(task1, task2));
+        when(taskRepository.findTop5ByCompletedFalseOrderByCreatedAtAsc()).thenReturn(Arrays.asList(task1, task2));
 
         // Act
         List<Task> tasks = taskService.getTasks();
@@ -75,7 +75,7 @@ class TaskServiceTest {
         assertEquals(2, tasks.size());
         assertEquals("Task 1", tasks.get(0).getTitle());
         assertEquals("Task 2", tasks.get(1).getTitle());
-        verify(taskRepository, times(1)).findTop5ByCompletedFalseOrderByCreatedAtDesc();
+        verify(taskRepository, times(1)).findTop5ByCompletedFalseOrderByCreatedAtAsc();
     }
 
     @Test

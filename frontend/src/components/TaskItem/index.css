@@ -6,14 +6,22 @@
     border-radius: 5px;
     margin-bottom: 10px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-item .task-content {
+    flex: 1;
 }
 
 .task-item h3 {
-    margin: 10px;
+    margin: 0;
+    font-size: 17px;
 }
 
 .task-item p {
-    margin: 5px 10px 10px;
+    margin: 5px 0 0 0;
     font-size: 15px;
 }
 
@@ -28,8 +36,8 @@
     cursor: pointer;
     font-size: 12px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-
-    margin: 10px;
+    margin-left: 10px;
+    align-self: center;
 }
 
 .task-item button:hover {

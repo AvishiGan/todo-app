@@ -47,9 +47,11 @@ const TaskForm = ({ onTaskCreated }) => {
             aria-label="Task description"
           />
         </div>
-        <button type="submit" disabled={isLoading}>
-          {isLoading ? "Adding..." : "Add"}
-        </button>
+        <div className="form-button-container">
+          <button type="submit" disabled={isLoading}>
+            {isLoading ? "Adding..." : "Add"}
+          </button>
+        </div>
       </form>
     </div>
   );

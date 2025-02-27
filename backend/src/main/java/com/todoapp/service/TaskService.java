@@ -20,7 +20,7 @@ public class TaskService {
     }
 
     public List<Task> getTasks() {
-        return taskRepository.findTop5ByCompletedFalseOrderByCreatedAtDesc();
+        return taskRepository.findTop5ByCompletedFalseOrderByCreatedAtAsc();
     }
 
     public Task completeTask(Long id) {
