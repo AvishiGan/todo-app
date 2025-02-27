@@ -6,7 +6,6 @@
     border-radius: 5px;
     margin-bottom: 10px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    /* Set Roboto as the primary font */
 }
 
 .task-item h3 {
@@ -29,7 +28,7 @@
     cursor: pointer;
     font-size: 12px;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    /* Set Roboto as the primary font */
+
     margin: 10px;
 }
 

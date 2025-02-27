@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import TaskForm from "./components/TaskForm/index";
 import TaskList from "./components/TaskList/index";
 import { completeTask, createTask, getTasks } from "./api";
-import "./App.css"; // Import the CSS file
+import "./App.css";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -15,7 +15,7 @@ const App = () => {
       try {
         const response = await getTasks();
         setTasks(response.data);
-        setError(null); // Clear any previous errors
+        setError(null);
       } catch (error) {
         console.error("Error fetching tasks:", error);
         setError("Failed to fetch tasks. Please try again later.");
@@ -26,31 +26,31 @@ const App = () => {
 
   // Handle task creation
   const handleTaskCreated = async (newTask) => {
-    setIsLoading(true); // Start loading
+    setIsLoading(true);
     try {
       const response = await createTask(newTask);
       setTasks([response.data, ...tasks].slice(0, 5)); // Keep only the latest 5 tasks
-      setError(null); // Clear any previous errors
+      setError(null);
     } catch (error) {
       console.error("Error creating task:", error);
       setError("Failed to create task. Please try again.");
     } finally {
-      setIsLoading(false); // Stop loading
+      setIsLoading(false);
     }
   };
 
   // Handle task completion
   const handleTaskCompleted = async (taskId) => {
-    setIsLoading(true); // Start loading
+    setIsLoading(true);
     try {
       await completeTask(taskId);
       setTasks(tasks.filter((task) => task.id !== taskId)); // Remove the completed task from the list
-      setError(null); // Clear any previous errors
+      setError(null);
     } catch (error) {
       console.error("Error completing task:", error);
       setError("Failed to complete task. Please try again.");
     } finally {
-      setIsLoading(false); // Stop loading
+      setIsLoading(false);
     }
   };
 
