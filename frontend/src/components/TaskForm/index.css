@@ -19,13 +19,14 @@
 
 .task-form input,
 .task-form textarea {
-    width: 100%;
+    width: calc(100% - 20px);
     padding: 8px;
     font-size: 14px;
     border-radius: 4px;
     border: 1px solid #ccc;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 .task-form textarea {
@@ -40,9 +41,13 @@
     border-radius: 8px;
     cursor: pointer;
     font-size: 12px;
-    margin-right: auto;
 }
 
 .task-form button:hover {
     background-color: #1a4fd2;
+}
+
+.task-form .form-button-container {
+    display: flex;
+    justify-content: flex-end;
 }
