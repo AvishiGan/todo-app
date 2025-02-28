@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "77b93d54-7ea4-4ed5-b45b-98605029a65a",
+		"name": "Todo App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "24968602",
+		"_collection_link": "https://gold-station-906499.postman.co/workspace/Team-Workspace~700462a1-1a4e-4ad1-8f1a-48ec695661ce/collection/24968602-77b93d54-7ea4-4ed5-b45b-98605029a65a?action=share&source=collection_link&creator=24968602"
+	},
+	"item": [
+		{
+			"name": "Create a Task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Buy books\",\r\n  \"description\": \"Buy books for the next school year\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/tasks"
+			},
+			"response": []
+		},
+		{
+			"name": "Complete a Task",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": "http://localhost:8080/api/tasks/1/complete"
+			},
+			"response": []
+		}
+	]
+}
