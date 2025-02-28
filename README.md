@@ -1,4 +1,11 @@
 # Todo App
+This is a simple to-do task web application that allows users to create and manage tasks efficiently. Users can add new tasks by providing a title and description, and only the most recent five tasks will be displayed in the UI. Tasks can be marked as completed, upon which they will be removed from the visible list.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/6755f49d-fb14-49f9-b84c-18d2c3e1d65d" alt="frontend-ui">
+
+  <p><strong>Figure 1: Frontend UI of the To-Do App</strong></p>
+</div>
 
 ## Technologies Used
 - **Frontend**: React
